@@ -1,0 +1,467 @@
+:root{
+   --Cyan: hsl(180, 66%, 49%);
+   --Dark-Violet: hsl(257, 27%, 26%);    
+   --Red: hsl(0, 87%, 67%);    
+   --Gray: hsl(0, 0%, 75%);
+   --Grayish-Violet: hsl(257, 7%, 63%);
+   --Very-Dark-Blue: hsl(255, 11%, 22%);
+   --Very-Dark-Violet: hsl(260, 8%, 14%); 
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Black.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+}
+
+body{    
+    background-color: rgba(242, 239, 239, 0.61);
+}
+
+.mainSection{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 105px; 
+    color: var(--Grayish-Violet);
+    font-weight: bolder;       
+}
+
+li{
+    margin: 10px;    
+    list-style: none;
+}
+
+ul img{
+    width:auto;
+    height: 35px;
+    margin: 5px;
+    
+}
+
+.navBotones{
+    margin-right: 80px;
+}
+
+nav button{
+     
+    border: none;
+    border-radius: 10px;
+    color: var(--Gray);
+    background-color: white;
+    width: 90px;
+    height: 30px;    
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+nav button:hover{
+    background-color: var(--Cyan);
+    color: white;
+    cursor: pointer;  
+}
+
+.primeraSeccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    width: 95vph;
+    height: 400px;
+}
+
+.primerDiv{
+    display: flex;    
+    flex-direction: column;
+    width: 420px;
+    height: auto;
+    margin: 15px;
+    padding: 15px;    
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.primerDiv button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    color: var(--Cyan);
+    background-color: white;
+    width: 150px;
+    height: 45px;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.primerDiv button:hover{
+    background-color: var(--Cyan);
+    color: white;
+    cursor: pointer;  
+}
+
+.primerDiv p{
+    color: var(--Grayish-Violet);
+    font-weight: bolder;
+}
+
+.segundoDiv{
+    display: flex;   
+    width: 35%;
+    height: auto;
+    margin: 15px;
+    padding: 15px;    
+}
+
+.segundoDiv img{
+    width:auto;
+    height:300px;
+}
+
+.segundaSeccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+    height: 120px;
+    margin-left: 145px;
+    padding:10px;
+    background-image: url(./images/bg-shorten-desktop.svg);
+    background-color: var(--Dark-Violet);
+    border-radius: 10px;    
+}
+
+.segundaSeccion input{
+    width: 75%;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;    
+}
+
+.segundaSeccion button{
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: var(--Cyan);
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 18px;    
+}
+
+.segundaSeccion button:hover{
+    cursor: pointer;
+
+}
+
+.terceraSeccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;        
+}
+
+.tercerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 450px;
+    height: 200px;
+    gap: 15px;    
+}
+
+.tercerDiv h2{
+    color: var(--Very-Dark-Blue);
+    font-weight: bolder;
+}
+
+.tercerDiv p{
+    color: var(--Grayish-Violet);
+    font-weight: bolder;
+}
+
+
+.cuartaSeccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    padding: 10px;           
+}
+
+
+.cuartoDiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
+    height: 200px;    
+    margin-top: -50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.brandRecognition{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;    
+}
+
+.imgBrandRecognition{
+    display: flex;    
+    width: 28px;
+    height: 28px;
+}
+
+.cuartoDiv p{
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    color: var(--Grayish-Violet);
+    font-weight: bolder;
+    font-size: 12px;
+    margin: 8px;    
+}
+
+.detailedRecords{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgDetailedRecords{
+    display: flex;    
+    width: 30px;
+    height: 30px;
+}
+
+.quintoDiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;    
+    width: 250px;
+    height: 200px;    
+    margin-top: -10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;        
+}
+
+.fullyCustomizable{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgFullyCustomizable{
+    display: flex;    
+    width: 30px;
+    height: 30px;
+}
+
+.quintoDiv p{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: var(--Grayish-Violet);
+    font-weight: bolder;
+    font-size: 12px;
+    margin: 10px;    
+}
+
+.sextoDiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
+    height: 200px;    
+    margin-top: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sextoDiv p{
+    display: flex;
+    flex-direction: column;
+    text-align: start;    
+    color: var(--Grayish-Violet);
+    font-weight: bolder;
+    font-size: 12px;
+    margin: 12px;    
+}
+
+h4{
+    display: flex;    
+    color: var(--Very-Dark-Blue);
+    margin: 0px 10px 0px 10px;
+}
+
+.barrahr{
+    top: 35%;
+    width: 50%;
+    height: 8px;
+    position: absolute;
+    background-color: var(--Cyan);
+    z-index: -1;    
+}
+
+.box{
+    position: relative;
+    margin: -30px 0px 20px 20px;
+}
+
+.quintaSeccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    width: 100vph;
+    height: 200px;
+    background-color: var(--Dark-Violet);
+    background-image: url(./images/bg-boost-desktop.svg);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.quintaSeccion button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--Cyan);
+    width: 150px;
+    height: 35px;
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contFooter{
+    display:flex;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;        
+    width: 100vph;
+    height: auto;
+    background-color: black;     
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    color: white;
+    font-size: 14px;
+    margin-bottom: 40px;        
+}
+
+.liFooter{
+    color: var(--Grayish-Violet);
+    margin-left: 0px;
+    font-size: 12px;
+}
+
+.liFooter:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.footerLogo{
+    color: white;
+    margin-top: 50px;    
+    margin-inline: 100px;
+}
+
+.footerFeatures{
+    display: flex;        
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+.logos{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.logos img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.logos img:hover{
+    background-color: var(--Cyan);
+    cursor: pointer;
+}
+
+.box1{
+    margin-left: -5px;
+}
