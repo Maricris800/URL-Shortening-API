@@ -36,8 +36,7 @@ nav{
     justify-content: space-between;
     align-items:center;
     margin: 10px;
-    padding: 10px;
-    
+    padding: 10px;    
 }
 
 ul{
@@ -62,6 +61,11 @@ ul img{
     
 }
 
+.navList:hover{
+    color: var(--Very-Dark-Blue);
+    cursor:pointer;
+}
+
 .navBotones{
     margin-right: 80px;
 }
@@ -82,6 +86,14 @@ nav button:hover{
     background-color: var(--Cyan);
     color: white;
     cursor: pointer;  
+}
+
+.navMenu{
+    display: none;
+}
+
+.responsive{
+    display: none;
 }
 
 .primeraSeccion{
@@ -464,4 +476,273 @@ footer ul{
 
 .box1{
     margin-left: -5px;
+}
+
+@media screen and (max-width: 375px){
+       
+    nav{        
+        margin: 5px;
+        padding: 5px;        
+    }
+    
+    ul{        
+        margin-left: 5px;             
+    }
+    
+    li{
+        margin: 10px;    
+        list-style: none;
+    }
+    
+    ul img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95px;
+        height: 35px;
+        margin: 5px;        
+    }
+
+    .navList, .navBotones{
+        display: none;        
+    }
+
+    .navMenu{
+        display: flex;              
+    }
+
+    .navMenu button img{
+        display: flex-end;
+        width: 30px;
+        height: 30px;
+        margin-left: 0px;
+    }
+
+    .navMenu button{
+        width: 35px;
+        height: 35px;
+        margin-left: -45px;              
+    }
+
+    .menuResponsive{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 338px;
+        height: 375px;
+        background: var(--Very-Dark-Blue);
+        color: white;
+        border-radius: 10px;  
+        margin-top: 428px;
+        margin-left: 8px;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: bolder;    
+    }
+
+    .menuResponsive hr{
+        width: 95%;
+        height: 2px;
+        margin: 20px 10px 20px 10px;        
+    }
+
+    .menuResponsive li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .signUp{
+        display: flex;
+        background-color: var(--Cyan);
+        height: 45px;
+        border-radius: 25px;
+    }
+
+
+    .primeraSeccion{       
+        flex-direction: column-reverse;
+        margin-top: 5px;
+        padding: 10px;
+        width: 95vph;
+        height: auto;
+    }
+    
+    .primerDiv{
+        display: flex;    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 350px;
+        height: auto;
+        margin: 5px;
+        padding: 5px;    
+    }
+    
+    h1{
+        font-size: 2.5rem;                         
+    }
+    
+    .primerDiv button{       
+        width: 150px;
+        height: 45px;
+        background-color: var(--Cyan);
+        color: white;
+        font-weight: bolder;
+        font-size: 18px;
+        margin: 10px;
+        padding: 10px;
+    }
+        
+    .primerDiv p{
+        color: var(--Grayish-Violet);
+        font-weight: light;
+        font-size: large;
+        margin-top: 5px;
+    }
+
+    .segundoDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        width: 95%;        
+        margin: 10px;
+        padding: 10px;    
+    }
+    
+    .segundoDiv img{
+        width: 530px;
+        height: auto;
+        margin-top: -60px;
+        margin-right: -130px;
+        margin-left: 35px;
+        padding: 10px; 
+    }
+
+    .segundaSeccion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 340px;
+        margin-left: 20px;        
+        gap: 10px;       
+    }
+
+    .segundaSeccion input, .segundaSeccion button{
+        width: 320px;
+    }
+
+    .tercerDiv{
+        margin-top: 30px;        
+    }
+
+    .tercerDiv p{
+        margin-bottom: 35px;
+    }
+
+    .cuartaSeccion{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .cuartoDiv{
+        margin-top: -10px;
+        width: 330px;
+        height: 290px;
+    }
+
+    .quintoDiv{
+        margin-top: 10px;
+        width: 330px;
+        height: 290px;
+    }
+
+   .sextoDiv{
+        margin-top: 10px;
+        width: 330px;
+        height: 290px;
+    }
+
+    .cuartoDiv h4, .quintoDiv h4, .sextoDiv h4{
+        font-size: 1.30rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+   .cuartoDiv p, .quintoDiv p, .sextoDiv p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .box{
+        display: flex;
+        margin-left: 120px;
+        margin-top: -45px;
+        width: 75px;
+        height: 75px;
+        
+    }
+
+    .imgBrandRecognition, .imgDetailedRecords, .imgFullyCustomizable{
+        width: 35px; 
+        height: 35px;
+    }
+
+    .barrahr{
+        top: 50%;
+        width: 250%;        
+        z-index: -1;        
+        transform: rotate(90deg);
+    }   
+    
+    .contFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;             
+    }
+
+    .footerLogo{
+        margin-bottom: 25px;
+    }
+
+    .box1, .box2, .box3{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+    }
+
+    .ulFooterFeatures,.ulFooterResources, .ulFooterCompany{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        width: 135px;
+        height: 130px;
+        font-size: 16px;
+    } 
+
+    .liFooter{
+        font-size: 14px;
+    }    
+    
+    .logos{
+        display: flex;
+        margin-top: 20px; 
+        margin-left: 5px; 
+        margin-bottom: 20px;  
+    }    
 }
